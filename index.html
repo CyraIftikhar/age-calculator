@@ -8,12 +8,12 @@
   </head>
   <body>
     <h1>Calculate your Age</h1>
-    <form>
+    <form onkeydown="if (event.key === 'Enter') { calculateAge(); }">
       <label>Enter your date of birth:</label><br />
       <input type="date" id="dob" />
       <input type="button" value="Calculate" onclick="calculateAge()" />
     </form>
-    <p id="age"></p>
-    <script sr="./script.js"></script>
+    <p id="age">Hello</p>
+    <script src="./script.js"></script>
   </body>
 </html>
