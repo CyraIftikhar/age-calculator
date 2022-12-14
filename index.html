@@ -8,11 +8,12 @@
   </head>
   <body>
     <h1>Calculate your Age</h1>
-    <div class="container">
-      <label for="birth">Enter Your Birth Date</label>
-      <input type="date" name="birth" id="birth" required />
-      <button id="submit">Calculate</button>
-      <p id="result"></p>
-    </div>
+    <form>
+      <label>Enter your date of birth:</label><br />
+      <input type="date" id="dob" />
+      <input type="button" value="Calculate" onclick="calculateAge()" />
+    </form>
+    <p id="age"></p>
+    <script sr="./script.js"></script>
   </body>
 </html>
