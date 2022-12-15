@@ -17,9 +17,23 @@
     <h1>Calculate your Age</h1>
     <div class="container">
       <form onkeydown="if (event.key === 'Enter') { calculateAge(); }">
-        <label>Enter your date of birth:</label><br />
-        <input type="date" id="dob" />
-        <input type="button" value="Calculate" onclick="calculateAge()" />
+        <div class="form-group">
+          <label class="mb-2">Enter your date of birth:</label>
+          <input
+            type="date"
+            id="dob"
+            class="form-control date-input"
+            style="border-color: rgb(150, 121, 255)"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="button"
+            value="Calculate"
+            onclick="calculateAge()"
+            class="form-control btn-primary button"
+          />
+        </div>
       </form>
       <p id="age"></p>
     </div>

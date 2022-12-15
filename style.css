@@ -47,41 +47,34 @@ input {
   cursor: pointer;
   border-radius: 8px;
   font-size: 18px;
-  outline: none;
-  border: 1px solid
-    radial-gradient(
-      circle at 18.7% 37.8%,
-      rgb(250, 250, 250) 0%,
-      rgb(225, 234, 238) 90%
-    );
-}
-
-button {
-  font-weight: 600;
-  border-radius: 8px;
-  margin-top: 20px;
-  font-size: 1.5rem;
-  border: none;
-  transition: 0.4s;
-  color: #fff;
-  background: 1px solid
-    radial-gradient(
-      circle at 18.7% 37.8%,
-      rgb(250, 250, 250) 0%,
-      rgb(225, 234, 238) 90%
-    );
-}
-
-button:hover {
-  transform: scale(1.1);
-  cursor: pointer;
 }
 
 p {
-  margin-top: 40px;
-  background-color: rgb(150, 121, 255);
-  color: white;
+  color: rgb(150, 121, 255);
   padding: 8px 30px;
   font-size: 1.3rem;
   border-radius: 8px;
+  font-weight: bolder;
+}
+
+p:empty {
+  display: none;
+}
+
+.button {
+  background-color: rgb(150, 121, 255);
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  border: none;
+  transition: 0.4s;
+  display: block;
+  max-width: fit-content;
+  margin: 20px auto;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
