@@ -15,12 +15,14 @@
   </head>
   <body>
     <h1>Calculate your Age</h1>
-    <form onkeydown="if (event.key === 'Enter') { calculateAge(); }">
-      <label>Enter your date of birth:</label><br />
-      <input type="date" id="dob" />
-      <input type="button" value="Calculate" onclick="calculateAge()" />
-    </form>
-    <p id="age"></p>
+    <div class="container">
+      <form onkeydown="if (event.key === 'Enter') { calculateAge(); }">
+        <label>Enter your date of birth:</label><br />
+        <input type="date" id="dob" />
+        <input type="button" value="Calculate" onclick="calculateAge()" />
+      </form>
+      <p id="age"></p>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
